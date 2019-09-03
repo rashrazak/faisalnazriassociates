@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "now-build": "npm run prepare && next build"
+    "start": "next start"
   },
   "keywords": [],
   "author": "",

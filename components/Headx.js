@@ -97,7 +97,7 @@ function Headx({title, children}) {
                         </DropdownMenu>
                     </UncontrolledDropdown> */}
                     <NavItem>
-                        <NavLink href="/career"> Career</NavLink>
+                        <NavLink href="/career" className={routerx.pathname == '/career' ? 'active':''}> Career</NavLink>
                     </NavItem>
                     </Nav>
                 </Collapse>

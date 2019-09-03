@@ -175,6 +175,7 @@ function Headx(_ref) {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_8__["NavLink"], {
     href: "/career",
+    className: routerx.pathname == '/career' ? 'active' : '',
     __source: {
       fileName: _jsxFileName,
       lineNumber: 100
@@ -35649,7 +35650,7 @@ function career() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!*************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fcareer&absolutePagePath=C%3A%5Cwamp64%5Cwww%5Cprojek%5Cfaisalnazri%5Cpages%5Ccareer.js ***!
   \*************************************************************************************************************************************/
@@ -35672,5 +35673,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=career.js.map
