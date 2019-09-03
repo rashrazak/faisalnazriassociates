@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import { FaFacebook } from 'react-icons/fa';
 import { IoIosChatboxes, IoIosMail } from 'react-icons/io';
-import Link from 'next/link'
 import Head from 'next/head'
 import '../css/bootstrap.min.css'
 import '../css/index.css'
+import { useRouter } from 'next/router'
 import {Collapse,
     Navbar,
     NavbarToggler,
@@ -18,9 +18,8 @@ import {Collapse,
     DropdownItem, Container
 } from 'reactstrap'
 function Headx({title, children}) {
-
     const [collapsed, setCollapsed] = useState(false)
-
+    const routerx = useRouter();
     return (
         <React.Fragment>
             <Head>
@@ -36,13 +35,13 @@ function Headx({title, children}) {
                 <Collapse isOpen={collapsed} navbar>
                     <Nav className="ml-auto" navbar>
                     <NavItem>
-                       <NavLink href="/"> Our Services</NavLink>
+                       <NavLink href="/" className={routerx.pathname == '/services' ? 'active':''}> Our Services</NavLink>
                     </NavItem>
                     <NavItem>
-                       <NavLink href="/"> About Us</NavLink>
+                       <NavLink href="/aboutus" className={routerx.pathname == '/aboutus' ? 'active':''}> About Us</NavLink>
                     </NavItem>
                     <NavItem>
-                       <NavLink href="/"> Contact Us</NavLink>
+                       <NavLink href="/contact" className={routerx.pathname == '/contact' ? 'active':''}> Contact Us</NavLink>
                     </NavItem>
                     {/* <UncontrolledDropdown nav inNavbar>
                         <DropdownToggle nav caret>
@@ -98,7 +97,7 @@ function Headx({title, children}) {
                         </DropdownMenu>
                     </UncontrolledDropdown> */}
                     <NavItem>
-                        <NavLink href="/"> Career</NavLink>
+                        <NavLink href="/career"> Career</NavLink>
                     </NavItem>
                     </Nav>
                 </Collapse>
@@ -108,9 +107,8 @@ function Headx({title, children}) {
                 {children}
             </div>
             <footer className="footerx">
-                {/* <div className="containerx"> */}
                 <Container>
-                    <span className="text-muted">Place sticky footer content here.</span>
+                    <span className="text-muted">FAISAL NAZRI & ASSOCIATES</span>
                     <div className="float-right footer-brand">
                         <a href="facebook.com"><FaFacebook size={24} /></a>
                         <a href="/contactus"><IoIosChatboxes size={24} /></a>
